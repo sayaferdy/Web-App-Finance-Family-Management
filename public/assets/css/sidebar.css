@@ -1,0 +1,96 @@
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#111827;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    z-index:999;
+    transition:.3s;
+}
+
+.sidebar-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:40px;
+    color:#fff;
+}
+
+.brand-icon{
+    width:50px;
+    height:50px;
+    border-radius:16px;
+    background:rgba(255,255,255,.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.sidebar-menu{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.sidebar-link{
+    color:#cbd5e1;
+    text-decoration:none;
+    padding:14px 16px;
+    border-radius:14px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    transition:.2s;
+}
+
+.sidebar-link:hover{
+    background:rgba(255,255,255,.08);
+    color:#fff;
+}
+
+.sidebar-footer{
+    margin-top:auto;
+}
+
+.role-badge{
+    background:rgba(255,255,255,.1);
+    color:#fff;
+    padding:12px;
+    border-radius:14px;
+    text-align:center;
+    font-size:14px;
+}
+
+.sidebar-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.4);
+    z-index:998;
+    display:none;
+}
+
+.sidebar-link.active{
+    background:#6366f1;
+    color:#fff;
+}
+
+@media(max-width:992px){
+
+    .sidebar{
+        transform:translateX(-100%);
+    }
+
+    .sidebar.show{
+        transform:translateX(0);
+    }
+
+    .sidebar-overlay.show{
+        display:block;
+    }
+
+}

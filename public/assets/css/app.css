@@ -1,0 +1,245 @@
+:root{
+    --primary:#6366f1;
+    --primary-hover:#4f46e5;
+
+    --bg:#f5f7fb;
+    --card:#ffffff;
+
+    --text:#0f172a;
+    --muted:#64748b;
+
+    --border:#e2e8f0;
+
+    --success:#22c55e;
+    --danger:#ef4444;
+    --warning:#f59e0b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+.main-wrapper{
+    margin-left:260px;
+    padding:30px;
+    min-height:100vh;
+}
+
+.page-content{
+    margin-top:24px;
+}
+
+/* =========================
+PAGE HEADER
+========================= */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:28px;
+}
+
+.page-title{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:6px;
+}
+
+.page-subtitle{
+    color:var(--muted);
+    margin:0;
+}
+
+/* =========================
+CARD
+========================= */
+
+.modern-card{
+    background:var(--card);
+    border-radius:24px;
+    padding:28px;
+    box-shadow:0 4px 20px rgba(0,0,0,.04);
+}
+
+/* =========================
+BUTTON
+========================= */
+
+.btn{
+    border:none;
+    border-radius:14px;
+    padding:12px 18px;
+    font-weight:600;
+}
+
+.modern-btn{
+    border-radius:14px;
+    padding:12px 20px;
+}
+
+.btn-primary{
+    background:var(--primary);
+}
+
+.btn-primary:hover{
+    background:var(--primary-hover);
+}
+
+.btn-light-primary{
+    background:#eef2ff;
+    color:var(--primary);
+}
+
+.btn-light-primary:hover{
+    background:#dbe4ff;
+}
+
+/* =========================
+FORM
+========================= */
+
+.modern-input{
+    border-radius:14px;
+    border:1px solid var(--border);
+    padding:14px;
+}
+
+.modern-input:focus{
+    box-shadow:none;
+    border-color:var(--primary);
+}
+
+.form-label{
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.input-group-text{
+    border-radius:14px 0 0 14px;
+}
+
+/* =========================
+TABLE
+========================= */
+
+.table-card{
+    overflow:hidden;
+}
+
+.table-action{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+/* =========================
+SUMMARY CARD
+========================= */
+
+.summary-card{
+    background:#fff;
+    border-radius:24px;
+    padding:24px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    box-shadow:0 4px 20px rgba(0,0,0,.04);
+    height:100%;
+}
+
+.summary-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    color:#fff;
+}
+
+.income-card .summary-icon{
+    background:var(--success);
+}
+
+.expense-card .summary-icon{
+    background:var(--danger);
+}
+
+.balance-card .summary-icon{
+    background:var(--primary);
+}
+
+.summary-card h3{
+    margin-top:6px;
+    font-weight:700;
+}
+
+/* =========================
+MONEY
+========================= */
+
+.money-text{
+    font-weight:700;
+}
+
+.money-text.income{
+    color:var(--success);
+}
+
+.money-text.expense{
+    color:var(--danger);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+.mobile-menu-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:9999;
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:14px;
+    background:#fff;
+    display:none;
+}
+
+@media(max-width:992px){
+
+    .main-wrapper{
+        margin-left:0;
+        padding:18px;
+    }
+
+    .mobile-menu-btn{
+        display:block;
+    }
+
+    .page-title{
+        font-size:22px;
+    }
+
+    .modern-card{
+        padding:20px;
+    }
+
+    .summary-card{
+        padding:18px;
+    }
+
+}

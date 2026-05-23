@@ -1,0 +1,39 @@
+.form-card{
+    background:#fff;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 4px 20px rgba(0,0,0,.04);
+}
+
+.form-title{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.form-subtitle{
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.form-control,
+.form-select{
+    border-radius:14px;
+    border:1px solid #e2e8f0;
+    padding:14px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#6366f1;
+}
+
+.page-header{
+    margin-bottom:30px;
+}

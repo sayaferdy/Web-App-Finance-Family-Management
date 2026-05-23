@@ -1,0 +1,163 @@
+C:\XAMPP\HTDOCS\RUMAHKU\APP
+│   .htaccess
+│   Common.php
+│   index.html
+│   
+├───Config
+│   │   App.php
+│   │   Autoload.php
+│   │   Cache.php
+│   │   Constants.php
+│   │   ContentSecurityPolicy.php
+│   │   Cookie.php
+│   │   CURLRequest.php
+│   │   Database.php
+│   │   DocTypes.php
+│   │   Email.php
+│   │   Encryption.php
+│   │   Events.php
+│   │   Exceptions.php
+│   │   Feature.php
+│   │   Filters.php
+│   │   ForeignCharacters.php
+│   │   Format.php
+│   │   Generators.php
+│   │   Honeypot.php
+│   │   Images.php
+│   │   Kint.php
+│   │   Logger.php
+│   │   Migrations.php
+│   │   Mimes.php
+│   │   Modules.php
+│   │   Pager.php
+│   │   Paths.php
+│   │   Publisher.php
+│   │   Routes.php
+│   │   Security.php
+│   │   Services.php
+│   │   Toolbar.php
+│   │   UserAgents.php
+│   │   Validation.php
+│   │   View.php
+│   │   
+│   └───Boot
+│           development.php
+│           production.php
+│           testing.php
+│           
+├───Controllers
+│       Auth.php
+│       BaseController.php
+│       Bills.php
+│       Budgets.php
+│       Dashboard.php
+│       Home.php
+│       Transactions.php
+│       Users.php
+│       Reports.php
+│       
+├───Database
+│   ├───Migrations
+│   │       .gitkeep
+│   │       
+│   └───Seeds
+│           .gitkeep
+│           CategorySeeder.php
+│           DatabaseSeeder.php
+│           UserSeeder.php
+│           
+├───Filters
+│       .gitkeep
+│       AuthFilter.php
+│       SuperadminFilter.php
+│       
+├───Helpers
+│       .gitkeep
+│       auth_helper.php
+│       
+├───Language
+│   │   .gitkeep
+│   │   
+│   └───en
+│           Validation.php
+│           
+├───Libraries
+│       .gitkeep
+│       
+├───Models
+│       .gitkeep
+│       BillModel.php
+│       BudgetModel.php
+│       CategoryModel.php
+│       SavingModel.php
+│       TransactionModel.php
+│       UserModel.php
+│       
+├───ThirdParty
+│       .gitkeep
+│       
+├───Views
+│   │   welcome_message.php
+│   │   
+│   ├───auth
+│   │       login.php
+│   │ 
+│   ├───bills
+│   │       index.php
+│   │       create.php
+│   │ 
+│   ├───budgets
+│   │       create.php
+│   │       index.php
+│   │       
+│   ├───dashboard
+│   │       index.php
+│   │       
+│   ├───errors
+│   │   ├───cli
+│   │   │       error_404.php
+│   │   │       error_exception.php
+│   │   │       production.php
+│   │   │       
+│   │   └───html
+│   │           debug.css
+│   │           debug.js
+│   │           error_404.php
+│   │           error_exception.php
+│   │           production.php
+│   │           
+│   ├───layouts
+│   │       footer.php
+│   │       header.php
+│   │       main.php
+│   │       sidebar.php
+│   │ 
+│   ├───reports
+│   │       monthly.php
+│   │    
+│   ├───transactions
+│   │       create.php
+│   │       edit.php
+│   │       index.php
+│   │ 
+│   └───users
+│           change_password.php
+│           create.php
+│           index.php
+│           profile.php
+├───public
+│   ├───assets
+│   │       ├───css
+│   │       │    app.css
+│   │       │    auth.css
+│   │       │    dashboard.css
+│   │       │    form.css
+│   │       │    sidebar.css
+│   │       │    table.css
+│   │       │    topbar.css
+│   │       └───js
+│   │            app.js
+│   │   .htaccess
+│   │   favicon.ico
+│   │   index.php
+│   │   robots.txt

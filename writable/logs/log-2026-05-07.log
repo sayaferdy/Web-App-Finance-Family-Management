@@ -1,0 +1,70 @@
+ERROR - 2026-05-07 22:56:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\rumahku\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\rumahku\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\rumahku\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rumahku\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rumahku\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\rumahku\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\rumahku\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\rumahku\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\rumahku\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\rumahku\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 C:\xampp\htdocs\rumahku\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 C:\xampp\htdocs\rumahku\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 C:\xampp\htdocs\rumahku\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rumahku\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rumahku\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\rumahku\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\rumahku\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rumahku\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rumahku\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\rumahku\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\rumahku\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\rumahku\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\rumahku\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\rumahku\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 C:\xampp\htdocs\rumahku\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#9 C:\xampp\htdocs\rumahku\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 C:\xampp\htdocs\rumahku\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rumahku\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rumahku\spark(98): CodeIgniter\CLI\Console->run()
+#13 {main}
+CRITICAL - 2026-05-07 22:56:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([...])
+ 8 SYSTEMPATH\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+10 SYSTEMPATH\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+12 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2026-05-07 22:59:36 --> Class "App\Models\TransactionModel" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2026-05-07 23:07:30 --> Invalid file: layouts/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/header.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layouts/header', [], true)
+ 3 APPPATH\Views\dashboard\index.php(1): view('layouts/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\index.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard/index', [], true)
+ 7 APPPATH\Controllers\Dashboard.php(32): view('dashboard/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
