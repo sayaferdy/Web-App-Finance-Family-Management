@@ -122,10 +122,12 @@ http://localhost/rumahku/public
 
 ## 🔐 Default Roles
 
-| Role       | Access |
-|------------|--------|
-| Superadmin | Full Access |
-| User       | Standard Features |
+| Role       | Username | Password | Access |
+|------------|----------|----------|--------|
+| Superadmin | admin    | admin123 | Full Access |
+| User       | -     | - | Standard Features |
+
+> Change the default password after first login for security purposes.
 
 ---
 
