@@ -29,12 +29,12 @@ RumahKu is an internal family financial management web application designed to h
 <img src="screenshots/dashboard.png" width="100%">
 
 ### Transactions
-<img src="screenshots/transactions.png" width="100%">
+<img src="screenshot/transactions.png" width="100%">
 
 ### Reports
-<img src="screenshots/reports.png" width="100%">
+<img src="screenshot/reports.png" width="100%">
 ### Users
-<img src="screenshots/user.png" width="100%">
+<img src="screenshot/user.png" width="100%">
 
 ---
 
